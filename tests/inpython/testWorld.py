@@ -11,7 +11,7 @@ from netmiko import ConnectHandler
 from ixnetwork_restpy import (SessionAssistant,
                               Files)
 
-profile_name = 'generate_test_json_true'
+profile_name = 'testWorld'
 test_description = 'Topology 1 эмулирует подключение клиента в группу 233.1.1.1 по протоколу IGMPv3. ' \
                    'Topology 1 выбирает конкретного источника 101.1.0.2. ' \
                    'Topology 2 эмулирует источник 101.1.0.2 ' \
