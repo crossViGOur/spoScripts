@@ -242,7 +242,7 @@ try:
     for k, v in dut_result.items():
         print(f'\n---{k}---')
         print(v)
-    with open(f'./reports/{profile_name}.json', 'w') as f:
+    with open(f'./report/{profile_name}.json', 'w') as f:
         f.write(json.dumps(dut_result))
 
 except Exception as errMsg:
