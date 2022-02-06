@@ -12,7 +12,7 @@ from ixnetwork_restpy import (SessionAssistant,
                               Files)
 
 import sys
-print("**** SCRIPT PARAMETERS: ", sys.argv)
+test_parameters=sys.argv
 
 profile_name = 'testNewWorld'
 test_description = 'Topology 1 эмулирует подключение клиента в группу 233.1.1.1 по протоколу IGMPv3. ' \
@@ -210,12 +210,14 @@ Loss %: 19
 """
 
 try:
+    print( "***** test_parameters: ", test_parameters)
     print('Ждем синхронизации 3 секунды')
     time.sleep(3)
     print('Проверяем, что трафик генерируется')
     print('Ждем 2 секунды')
     time.sleep(2)
     dut_result = {
+	'**** test_parameters': test_parameters,
         'Результат выполнения теста': 'Успешно',
         'Описание теста': test_description,
         'Статистика Protocols Summary (Ixia)': text1,
