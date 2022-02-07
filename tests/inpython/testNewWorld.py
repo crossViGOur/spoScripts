@@ -212,10 +212,10 @@ Loss %: 19
 try:
     print( "***** test_parameters: ", test_parameters)
     print('Ждем синхронизации 3 секунды')
-    time.sleep(3)
+    # time.sleep(3)
     print('Проверяем, что трафик генерируется')
     print('Ждем 2 секунды')
-    time.sleep(2)
+    # time.sleep(2)
     dut_result = {
 	'**** test_parameters': test_parameters,
         'Результат выполнения теста': 'Успешно',
@@ -231,13 +231,13 @@ try:
         'Процент потерь (Ixia)': text9
     }
     print('Записываем статистику в словарь')
-    time.sleep(1)
+    # time.sleep(1)
     print('Собираем статистику с Иксии')
-    time.sleep(1)
+    # time.sleep(1)
     print('Запрашиваем команды отображения на DUT')
-    time.sleep(1)
+    # time.sleep(1)
     print('Запрашиваем команды show')
-    time.sleep(1)
+    # time.sleep(1)
     print('Проверяем условия выполения тестирования')
     time.sleep(1)
     print('Записываем результатаы в JSON')
