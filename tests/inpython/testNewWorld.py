@@ -245,7 +245,7 @@ try:
         print(f'\n---{k}---')
         print(v)
     with open(f'./report/{profile_name}.json', 'w') as f:
-        f.write(json.dumps(dut_result))
+        f.write(json.dumps(dut_result, ensure_ascii=False))
 
 except Exception as errMsg:
     print('\nError: %s' % traceback.format_exc())
